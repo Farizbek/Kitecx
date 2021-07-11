@@ -1,0 +1,662 @@
+body
+{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header
+{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+}
+.menu_fixed
+{
+    display:flex;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(184, 184, 185);
+    border: 1px solid rgb(184, 184, 185);
+    border-radius: 5px;
+    box-shadow: 5px -10px 20px 10px;
+}
+
+.logo 
+{
+    margin-top: 1%;
+    width: 20%;
+    margin-left: 7%; 
+}
+.logo a{
+    position: relative;
+    text-decoration: none;
+    padding: 3px;
+    color: #000;
+    font-weight: bolder;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 12%;
+}
+.kitecx:before
+{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 10%;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+    box-shadow: transparent;
+}
+.kitecx:hover::before
+{
+    animation: animate 1s linear forwards;
+}
+@keyframes animate
+{
+    0% 
+    {
+        width: 0;
+        height: 0;
+        border-top-color: gray;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+50% 
+{
+    width: 100%;
+    height: 0;
+    border-top-color: slategray;
+    border-right-color: slategray;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+100% 
+{
+    width: 100%;
+    height: 100%;
+    border-top-color:#000;
+    border-right-color: #000;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+}
+.kitecx::after
+{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.kitecx:hover::after
+{
+    animation: animate2 1s linear forwards;
+}
+@keyframes animate2
+{
+    0% 
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: gray;
+    }
+
+50% 
+{
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: slategray;
+    border-left-color: slategray;
+}
+100% 
+{
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color:#000;
+    border-left-color: #000;
+}
+}
+.menus
+{
+    width: 70%;
+    display: flex;
+    flex-direction: row;  
+}
+.menu-item
+{
+    width: 70%;
+    height: 15vh;
+    margin-top: 4%;
+}
+.menu-item a
+{
+    text-decoration: none;
+    margin-left: 5%;
+    font-family: sans-serif;
+    color: #000;
+    opacity: 0.8;
+}
+.menu-item :hover
+{
+    font-weight: bolder;  
+}
+.menu-icon
+{
+    width: 30%;
+    height: 15vh;
+    margin-left: -350px;
+    margin-top: 2.5%;
+    font-family: sans-serif;
+}
+.menu-button1
+{
+    margin-top: 2.5%;
+    margin-left: -17%;
+}
+.menu-button1 :hover
+{
+    cursor: pointer;
+    background-color: gray;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.menu-button1 :active
+{
+    cursor: wait;
+    background-color: darkslategray;
+    box-shadow: -10px -10px 20px -5px;
+}
+.menu-icon a :hover
+{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.menu-icon a i
+{
+    color: #000;
+    margin-left: 7%;
+}
+.content
+{
+    display: flex;
+    flex-direction: rows;
+    margin-top: 10%;
+    width: 100%;
+    height: 500px;
+}
+.photo1 
+{
+    width: 100%;
+    height: 550px;
+    margin-left: 10%;
+}
+.uy1
+{
+    display: none;
+    width: 100%;
+    height: 550px;
+    margin-left: 10%;
+}
+.uy2
+{
+    display: none;
+    width: 100%;
+    height: 550px;
+    margin-left: 10%;
+}
+.future
+{
+    width: 20%;
+    height: 300px;
+    display: flex;
+    margin-top: 7%;
+    margin-left: -70px;
+}
+.future h1
+{
+    font-size: 55px;
+    font-family: sans-serif;
+    color: #fff;
+    margin-left: -800px;
+    margin-top: 15%;
+    width: 40%;
+}
+.learn
+{
+    margin-top: 300px;
+    height: 40px;
+}
+.button2
+{
+    margin-left: -100%;
+    padding: 20px;
+}
+.img1
+{
+    width: 30%;
+    margin-left: 15%;
+}
+.img2
+{
+    margin-left: 11%;
+    width: 30%;
+    height: 190px;
+}
+.img3 
+{
+    position: absolute;
+    width: 30%;
+    height: 98%;
+    margin-left: 110px;
+}
+.button2:hover
+{
+    cursor: pointer;
+    background-color: gray;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.button2:active
+{
+    cursor: wait;
+    background-color: darkslategray;
+}
+#ul 
+{
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 45%;
+
+}
+#ul a 
+{
+    padding: 7px;
+    color: #fff;
+}
+#ul a:hover
+{
+    cursor: pointer;
+    color: dimgray;
+    transition: 0.2s ease-in;
+}
+.content1
+{
+    justify-content: center;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 55%;
+    width: 70%;
+}
+.quality
+{
+    font-family: sans-serif;
+    position: absolute;
+    margin-left: -67%;
+    margin-top: 11%;
+    padding: 28px;
+    text-decoration: none;
+    border: 1px;
+    background-color: #fff;
+    color: #000;
+}
+.smartest 
+{
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    margin-left: -26%;
+    margin-top: 11%;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px;
+    background-color: #fff;
+    color: #000;
+    width: 160px;
+}
+.concept
+{
+    position: absolute;
+    margin-left: 102%;
+    padding: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -22%;
+    color: #fff;
+}
+.button3 
+{
+    position: absolute;
+    padding: 5px;
+    margin-left: 21%;
+    margin-top: 15%;
+}
+.button3:hover
+{
+    cursor: pointer;
+    background-color: gray;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.button3:active
+{
+    cursor: wait;
+    background-color: darkslategray;
+}
+.content2
+{
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 70%;
+}
+.img4
+{
+    margin-top: 5%;
+    width: 45%;
+    height: 450px;
+    margin-left: 5%;
+}
+.about 
+{
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 3%;
+    color: #000;
+    opacity: 0.5;
+}
+.content2 h2 
+{
+    position: absolute;
+    margin-left: 52%;
+    margin-top: -32%;
+    padding: 15px;
+    font-family: sans-serif;
+}
+.a1 
+{
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 14%;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.a2 
+{
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 3%;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.a3
+{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 3%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+}
+.a4 
+{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 25%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+}
+.a5 
+{
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 25%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+}
+.a6 
+{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 25%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+}
+.text1 
+{
+    position: absolute;
+    margin-top: -18%;
+    margin-left: 53%;    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+    opacity: 0.5;
+}
+.text2 
+{
+    margin-left: 53%;
+    margin-top: -15%;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+    opacity: 0.5;
+}
+.men
+{
+    position: relative;
+    margin-left: 53%;
+    width: 8%;
+    height: auto;
+    border-radius: 100%;
+}
+.john
+{
+    position: relative;
+    margin-left: 65%;
+    margin-top: -7%;
+    font-family: cursive;
+}
+.ceo
+{
+    position: relative;
+    margin-top: -1%;
+    margin-left: 65%;
+    opacity: 0.5;
+}
+.should
+{
+    margin-top: 10%;
+    margin-left: 8%;
+    width: 16%;
+    font-family: sans-serif;
+    border: 1px;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.img5
+{
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -249px;
+    width: 21%;
+    height: 228px;
+}
+.award
+{
+    width: 16%;
+    font-family: sans-serif;
+    border: 1px;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    padding-bottom: 55px;
+    margin-left: 50%;
+    margin-top: -252px;
+}
+.img6
+{
+    position: absolute;
+    width: 21%;
+    height: 228px;
+    margin-left: 69%;
+    margin-top: -250px;
+} 
+.menu2
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: silver;
+}
+.offering
+{
+    margin-left: 43%;
+    margin-top: 3%;
+    color: #000;
+    opacity: 0.5;
+}
+.professional
+{
+    text-align: center;
+    margin-top: 1%;
+    font-family: sans-serif; 
+}
+.menu-icon2
+{
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+.service
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.service-item
+{
+    background-color: cornsilk;
+    padding: 30px;
+    height: 33vh;
+    width: 20%;
+    box-shadow: rgb(160, 143, 245 , 0.5) 4px 4px 4px 1px;
+    margin-right: 3px;
+    border-radius: 2px;
+}
+.service-item h2
+{
+    display:flex;
+    margin-top: 5px;
+    margin-left: -1%;
+    font-family: sans-serif;
+}
+.service-item h5
+{
+    margin-top: 20%;
+    padding: 5px;
+    font-size: 15px;
+    opacity: 0.5;
+    font-family: sans-serif;
+}
+.service-item a
+{
+    color:gray;
+}
+.service-item i
+{
+    margin-left: 35%;
+}
+.menu3
+{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+}
+.what
+{
+    color:gray;
+    margin-left: 46%;
+    margin-top: 3%;
+    opacity: 0,5;
+}
+.project
+{
+    text-align: center;
+    font-family: sans-serif;
+}
+.img7
+{
+    position: absolute;
+    width: 23%;
+    height: 450px;
+    margin-left: 3.8%;
+    margin-top: 15%;
+}
+.img8
+{
+    position: absolute;
+    width: 23%;
+    height: 450px;
+    margin-left: 27%;
+    margin-top: 15%;
+}
+.img9
+{
+    position: absolute;
+    width: 23%;
+    height: 450px;
+    margin-left: 50%;
+    margin-top: 15%;
+}
+.img10
+{
+    position: absolute;
+    width: 23%;
+    height: 450px;
+    margin-left: 73.2%;
+    margin-top: 15%;
+}
+.architect
+{
+    position: absolute;
+    font-family: sans-serif;
+    margin-top: 18%;
+    margin-left: 30%;
+    color: #fff;
+    border: 1px;
+    background-color: #000;
+    padding: 275px 125px 100px 30px;
+    opacity: 0.9;
+}
